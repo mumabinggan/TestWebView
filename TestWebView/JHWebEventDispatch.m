@@ -71,7 +71,8 @@
     JHWebEventHandler *instance = [JHWebEventHandler shareInstance];
     instance.wkWebView = webView.webView;
     //添加分享
-    [webView.webView.configuration.userContentController addScriptMessageHandler:webView name:@"pay"];
+    __weak id weakWebView = webView;
+    [webView.webView.configuration.userContentController addScriptMessageHandler:weakWebView name:@"pay"];
 }
 
 + (void)handleScriptMessageHandler:(WKWebView *)webView name:(NSString *)name body:(NSDictionary *)body {

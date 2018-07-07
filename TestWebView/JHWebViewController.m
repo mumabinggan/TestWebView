@@ -53,7 +53,7 @@
 - (JHWKWebView *)wkWebView {
     if (!_wkWebView) {
         _wkWebView = [[JHWKWebView alloc] initWithFrame:self.view.frame];
-        _wkWebView.interactionType = JHWKWebInteractionTypeIFrame;
+        _wkWebView.interactionType = JHWKWebInteractionTypeMessageHandler;
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"index.html" withExtension:nil];
         [_wkWebView requestWithURL:url];
     }
