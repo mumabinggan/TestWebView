@@ -10,6 +10,8 @@
 #import <YYModel/YYModel.h>
 #import "JHWebEventHandlerHeader.h"
 
+#define kWebToOcScheme  @"mumabinggan"
+
 @implementation JHWebEventDispatch
 
 @end
@@ -17,7 +19,7 @@
 @implementation JHWebEventDispatch (IFrame)
 
 + (BOOL)canReplyEventDispatch:(NSURL *)url {
-    return [[url scheme] isEqualToString:@"mumabinggan"];
+    return [[url scheme] isEqualToString:kWebToOcScheme];
 }
 
 + (void)handleWebEvent:(UIView *)webView url:(NSURL *)url {
