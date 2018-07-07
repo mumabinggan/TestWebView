@@ -30,7 +30,13 @@
 }
 
 - (void)initSubView {
-    [self.view addSubview:self.wkWebView];
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    if (version.doubleValue >= 7.999) {
+        [self.view addSubview:self.wkWebView];
+    }
+    else {
+        [self.view addSubview:self.webView];
+    }
     [self.view addSubview:self.button];
 }
 

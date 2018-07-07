@@ -7,7 +7,6 @@
 //
 
 #import "JHWebEventDispatch.h"
-#import "JHBaseWebEventParam.h"
 #import <YYModel/YYModel.h>
 #import "JHWebEventHandlerHeader.h"
 

@@ -19,7 +19,6 @@
 		647A4AE620F064FE00CAE607 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 647A4AE520F064FE00CAE607 /* index.html */; };
 		647A4AE920F0A82000CAE607 /* JHWebEventDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4AE820F0A82000CAE607 /* JHWebEventDispatch.m */; };
 		647A4AEC20F0CCFE00CAE607 /* JHWebEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4AEB20F0CCFE00CAE607 /* JHWebEventHandler.m */; };
-		647A4AEF20F0CE2200CAE607 /* JHBaseWebEventParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4AEE20F0CE2200CAE607 /* JHBaseWebEventParam.m */; };
 		647A4AF220F0D32C00CAE607 /* JHWebEventHandler+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4AF120F0D32C00CAE607 /* JHWebEventHandler+Location.m */; };
 		647A4AF420F0D61C00CAE607 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647A4AF320F0D61C00CAE607 /* JavaScriptCore.framework */; };
 		647A4AF720F0DCF200CAE607 /* JHWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4AF620F0DCF200CAE607 /* JHWebView.m */; };
@@ -74,8 +73,6 @@
 		647A4AE820F0A82000CAE607 /* JHWebEventDispatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHWebEventDispatch.m; sourceTree = "<group>"; };
 		647A4AEA20F0CCFE00CAE607 /* JHWebEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHWebEventHandler.h; sourceTree = "<group>"; };
 		647A4AEB20F0CCFE00CAE607 /* JHWebEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHWebEventHandler.m; sourceTree = "<group>"; };
-		647A4AED20F0CE2200CAE607 /* JHBaseWebEventParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHBaseWebEventParam.h; sourceTree = "<group>"; };
-		647A4AEE20F0CE2200CAE607 /* JHBaseWebEventParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHBaseWebEventParam.m; sourceTree = "<group>"; };
 		647A4AF020F0D32C00CAE607 /* JHWebEventHandler+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JHWebEventHandler+Location.h"; sourceTree = "<group>"; };
 		647A4AF120F0D32C00CAE607 /* JHWebEventHandler+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JHWebEventHandler+Location.m"; sourceTree = "<group>"; };
 		647A4AF320F0D61C00CAE607 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -173,8 +170,6 @@
 				647A4B0020F1191B00CAE607 /* JHWebEventHandler+Share.m */,
 				647A4B0220F12D6200CAE607 /* JHWebEventHandler+Pay.h */,
 				647A4B0320F12D6200CAE607 /* JHWebEventHandler+Pay.m */,
-				647A4AED20F0CE2200CAE607 /* JHBaseWebEventParam.h */,
-				647A4AEE20F0CE2200CAE607 /* JHBaseWebEventParam.m */,
 				647A4AF520F0DCF200CAE607 /* JHWebView.h */,
 				647A4AF620F0DCF200CAE607 /* JHWebView.m */,
 				647A4AFB20F0F97100CAE607 /* JHWebEventHandlerHeader.h */,
@@ -522,7 +517,6 @@
 				647A4AC020F05F8800CAE607 /* main.m in Sources */,
 				647A4B0420F12D6200CAE607 /* JHWebEventHandler+Pay.m in Sources */,
 				647A4AB220F05F8400CAE607 /* AppDelegate.m in Sources */,
-				647A4AEF20F0CE2200CAE607 /* JHBaseWebEventParam.m in Sources */,
 				647A4AE420F0607400CAE607 /* JHWebViewController.m in Sources */,
 				647A4AFE20F10F6100CAE607 /* JHWKWebView.m in Sources */,
 			);

@@ -9,7 +9,6 @@
 #import "JHWebView.h"
 #import "JHWebEventDispatch.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-#import "JHBaseWebEventParam.h"
 #import <YYModel/YYModel.h>
 
 @interface JHWebView ()
