@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="扫一扫" onclick="scanClick()" />
+<input type="button" value="获取定位" onclick="locationClick()" />
+<input type="button" value="修改背景色" onclick="colorClick()" />
+<input type="button" value="分享" onclick="shareClick()" />
+<input type="button" value="支付" onclick="payClick()" />
+<input type="button" value="摇一摇" onclick="shake()" />
+<input type="button" value="返回" onclick="goBack()" />
+
+<script>
+    // js 就列几个比较有代表性的functions:
+
+function loadURL(url) {
+    var iFrame;
+    iFrame = document.createElement("iframe");
+    iFrame.setAttribute("src", url);
+    iFrame.setAttribute("style", "display:none;");
+    iFrame.setAttribute("height", "0px");
+    iFrame.setAttribute("width", "0px");
+    iFrame.setAttribute("frameborder", "0");
+    document.body.appendChild(iFrame);
+    // 发起请求后这个iFrame就没用了，所以把它从dom上移除掉
+    iFrame.parentNode.removeChild(iFrame);
+    iFrame = null;
+}
+
+function asyncAlert(content) {
+    setTimeout(function(){
+               alert(content);
+               },1);
+}
+
+function syncAlert(content) {
+    alert(content)
+}
+
+function locationClick() {
+    loadURL("mumabinggan://getLocation?callback=setLocation");
+}
+
+function setLocation(location) {
+    asyncAlert(location);
+}
+
+function shareClick() {
+    share('测试分享的标题','测试分享的内容','url=http://www.baidu.com');
+}
+
+function setShare(share) {
+    asyncAlert(share);
+}
+
+function payClick() {
+    window.webkit.messageHandlers.pay.postMessage({title:'测试分享的标题',content:'测试分享的内容',url:'http://www.baidu.com'});
+}
+
+function payCallback(content) {
+    asyncAlert(content);
+}
+
+function ocToJs(message) {
+    asyncAlert(message);
+}
+
+</script>
+
+</body>
+</html>
